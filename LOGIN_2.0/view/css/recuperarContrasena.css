@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+background: url(../imgs/fondo\ \(2\).jpg);
+background-size: cover;
+font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.reset-password {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    padding: 30px; /* Aumentar el padding */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Ancho del formulario */
+}
+
+.reset-password h2 {
+    margin-bottom: 20px;
+    color: #333; /* Color del título */
+}
+
+.reset-password input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Borde definido */
+    border-radius: 50px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de texto */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+.reset-password button {
+    width: 100%;
+    padding: 10px;
+    background-color: #077be7; /* Color del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.reset-password button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666; /* Color del mensaje */
+}
+
+/* Estilos para el enlace de volver al inicio */
+a.btn-home {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #077be7; /* Color del botón */
+    border-radius: 20px; /* Bordes redondeados */
+    width: 50%; /* Ancho del botón */
+    margin: 15px auto; /* Margen superior e inferior */
+    color: #fff; /* Color del texto */
+    font-size: 14px; /* Tamaño del texto */
+    transition: .4s;
+}
+
+a.btn-home:hover {
+    background: #FFD27F; /* Color al pasar el mouse */
+}
+
+
+a.btn-homes {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #077be7; /* Color del botón */
+    border-radius: 20px; /* Bordes redondeados */
+    width: 95%; /* Ancho del botón */
+    margin: 15px auto; /* Margen superior e inferior */
+    color: #fff; /* Color del texto */
+    font-size: 14px; /* Tamaño del texto */
+    transition: .4s;
+}
+
+a.btn-home:hover {
+    background: #FFD27F; /* Color al pasar el mouse */
+}

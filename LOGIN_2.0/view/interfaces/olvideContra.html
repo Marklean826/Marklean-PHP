@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/recuperarContrasena.css"> <!-- Vincula el archivo CSS -->
+    <title>Recuperar Contraseña</title>
+</head>
+<body>
+    <main class="reset-password">
+        <h2>Recuperar Contraseña</h2>
+        <form action="../../model/enviarCodigo.php" method="POST">
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <button type="submit">Enviar Código de Verificación</button>
+        </form>
+        <p class="message">Revisa tu correo para recibir el código.</p>
+
+
+           <!-- Botón para volver al index -->
+    <a href="../interfaces/index.html" class="btn-home">Volver al Inicio</a>
+    </main>
+
+ 
+</body>
+</html>
+
+

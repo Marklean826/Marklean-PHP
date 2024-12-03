@@ -1,0 +1,159 @@
+/* fonts */
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+/* html */
+html {
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+/* Login */
+/* + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+body {
+    background: url(../imgs/fondo\ \(2\).jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main.login {
+    border-radius: 40px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h2, p {
+    text-align: center;
+}
+
+main.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.login form input,
+main.login form button,
+main.login form select {
+    border-radius: 40px;
+    border: none;
+    font-family: Montserrat-Regular;
+    font-weight: 400;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+main.login form input {
+    background: #fff;
+    font-size: 14px;
+    text-indent: 20px;
+}
+
+main.login form select {
+    background: #fff;
+    font-size: 14px;
+    padding-left: 20px;
+    color: #333;
+    appearance: none; /* Oculta la flecha predeterminada en algunos navegadores */
+    background-image: url('../imgs/arrow-down.svg'); /* Flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+main.login form button {
+    background: #077be7;
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.4s;
+}
+
+main.login form button:hover {
+    background: #FFD27F;
+}
+
+#home h2 {
+    color: #000;
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#home p {
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+a.btn-home {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #077be7;
+    border-radius: 20px;
+    width: 50%;
+    margin: 15px auto;
+    color: #fff;
+    font-size: 14px;
+    transition: .4s;
+}
+
+a.btn-home:hover {
+    background: #FFD27F;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el select de rol */
+main.login form select {
+    background: #fff;
+    padding-left: 20px;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+}
+
+main.login form select option {
+    font-family: Montserrat-Regular;
+    color: #333;
+    font-size: 14px;
+}
+
+
+
+

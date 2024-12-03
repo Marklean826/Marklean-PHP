@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login || Tu Implementos Ideales</title>
+    <link rel="stylesheet" href="../css/master.css">
+</head>
+<body class="login">
+    
+    <main class="login loginInmo" id="home">
+        <h2>A un clic de tu compra</h2>
+        <p>Ingresa Tu Email y Contraseña</p>
+        <form action="../../model/loginUsuario.php" method="POST">
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" name="contrasena" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        
+        <!-- Botón para volver al index -->
+        <a href="../interfaces/index.html" class="btn-home">Volver al Inicio</a>
+        
+        <!-- Enlace para olvidaste tu contraseña -->
+        <a href="../interfaces/olvideContra.html" class="forgot-password">¿Olvidaste tu contraseña?</a>
+    </main>
+
+</body>
+</html>

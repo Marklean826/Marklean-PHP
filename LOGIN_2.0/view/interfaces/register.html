@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro || Tus artículos de limpieza de confianza</title>
+    <link rel="stylesheet" href="../css/master.css">
+</head>
+
+<body>
+    <main class="login register" id="home">
+        <h2>A un clic de tu compra</h2>
+        <p>Ingresa tus datos y crea una nueva cuenta.</p>
+        <form action="../../controller/registroUsuario.php" method="POST">
+            <input type="number" name="identificacion" placeholder="Identificación" required>
+            <input type="text" name="nombres" placeholder="Nombres" required>
+            <input type="text" name="apellidos" placeholder="Apellidos" required>
+            <input type="number" name="telefono" placeholder="Teléfono" required>
+            <input type="email" name="correo" placeholder="Correo Electrónico" required>
+            <input type="password" name="contrasena" placeholder="Contraseña" required> <br>
+            
+            <!-- Campo para seleccionar el rol -->
+            <label for="rol">Selecciona tu rol:</label> <br>
+            <select name="rol" id="rol" required>
+                <option value="usuario">Usuario</option>
+                <option value="admin">Administrador</option>
+            </select>  <br>
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <!-- Botón de Volver al Inicio -->
+        <a href="index.html" class="btn-home">Volver al Inicio</a>
+
+    </main>
+</body>
+
+</html>
