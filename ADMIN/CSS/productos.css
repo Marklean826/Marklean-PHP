@@ -1,0 +1,494 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos del encabezado */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.logout {
+    color: rgba(0, 112, 150, 1);;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    margin: 5px;
+    width: 130px;
+}
+
+/* Estilos del menú de navegación lateral */
+.side-menu {
+    width: 60px;
+    background-color: rgba(0, 112, 150, 1);
+    color: white;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: width 0.3s;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+}
+
+.side-menu:hover {
+    width: 230px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.side-menu a img {
+    min-width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 13px;
+}
+
+.side-menu a span {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.side-menu:hover a span {
+    opacity: 1;
+}
+
+.side-menu a:hover {
+    background-color: rgb(2, 81, 107);
+}
+
+
+
+
+
+/* Estilos del contenido principal */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 60px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para la sección de gestión de productos */
+#gestionProductos {
+    margin-bottom: 20px;
+}
+
+#gestionProductos h2 {
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.contenedor-columnas {
+   
+    display: flex;
+    gap: 20px;
+}
+
+.columna-izquierda {
+    
+    margin-right: 20px;
+    width: 400px;
+}
+
+.columna-derecha {
+    flex: 1;
+}
+
+/* Estilos para el formulario de búsqueda de productos */
+#buscarProductoForm {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#buscarProductoForm h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#buscarProductoForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#buscarProductoForm input[type="text"],
+#buscarProductoForm select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#buscarProductoForm button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 112, 150, 1);
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    
+}
+
+#buscarProductoForm button:hover {
+    background-color: rgb(1, 78, 104);
+}
+
+/* Estilos para la lista de productos existentes */
+#listaProductosExistentes {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 1px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#listaProductosExistentes h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#productosExistentes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#productosExistentes th,
+#productosExistentes td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#productosExistentes th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+/* Estilos para el popup de agregar producto de realidad aumentada */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-contenido {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.cerrar-popup {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar-popup:hover,
+.cerrar-popup:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-contenido h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+.popup-contenido form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-contenido label {
+    margin-top: 10px;
+    color: #333;
+}
+
+.popup-contenido input[type="text"],
+.popup-contenido input[type="file"],
+.popup-contenido select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.popup-contenido button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 112, 150, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-contenido button:hover {
+    background-color: rgba(0, 112, 150, 1);
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el popup de agregar producto de realidad aumentada */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-contenido {
+    background-color: #fefefe;
+    margin: auto; /* Centrará el popup horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    top: 20%; /* Ajusta este valor para mover el popup hacia arriba o abajo */
+    transform: translateY(-20%); /* Ajusta este valor para mover el popup hacia arriba o abajo */
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.cerrar-popup {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar-popup:hover,
+.cerrar-popup:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-contenido h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+.popup-contenido form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-contenido label {
+    margin-top: 10px;
+    color: #333;
+}
+
+.popup-contenido input[type="text"],
+.popup-contenido input[type="file"],
+.popup-contenido select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.popup-contenido button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 112, 150, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-contenido button:hover {
+    background-color: rgb(1, 79, 105);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para los botones de opciones de producto */
+#opcionesProducto {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#opcionesProducto h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#opcionesProducto button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 112, 150, 1);
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#opcionesProducto button:hover {
+    background-color: rgb(1, 74, 99);
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Asegurarse que está sobre otros elementos si es necesario */
+}
+
+/* Estilos para el contenido principal en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .side-menu:hover {
+        width: 100%;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .header {
+        position: relative;
+    }
+}
+
+
+
+
+
+

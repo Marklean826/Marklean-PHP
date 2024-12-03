@@ -1,0 +1,519 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;
+}
+
+.logout {
+    color: #333;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    margin: 10px;
+    width: 130px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li {
+    padding: 0 10px;
+    text-align: center !important;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.logout {
+    color: rgba(0, 112, 150, 1);;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    margin: 5px;
+    width: 130px;
+}
+
+
+
+
+
+/* Estilos del menú de navegación */
+.side-menu {
+    width: 60px;
+    background-color: rgba(0, 112, 150, 1);
+    color: white;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: width 0.3s;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+    
+}
+
+.side-menu:hover {
+    width: 230px;
+   
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.side-menu a img {
+    min-width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 13px;
+}
+
+.side-menu a span {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.side-menu:hover a span {
+    opacity: 1;
+}
+
+.side-menu a:hover {
+    background-color: rgb(2, 81, 107);
+}
+
+.contenedor-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 8, 8, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-popup.visible {
+    display: flex;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-height: 60%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.btn-cerrar-popup {
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    text-align: right;
+    color: #aaa;
+    transition: .3s ease all;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    background: none; /* Quitamos el fondo */
+}
+
+.btn-cerrar-popup:hover {
+    color: #333;
+}
+
+
+
+
+h3, h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.logout {
+    color: rgba(0, 112, 150, 1);
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.logout:hover {
+    text-decoration: underline;
+    color: rgba(0, 112, 150, 1);
+}
+
+.logo img {
+    margin: 10px;
+    width: 130px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li {
+    padding: 0 10px;
+    text-align: center !important;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+   
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+.side-menu {
+    width: 60px;
+    background-color: rgba(0, 112, 150, 1);
+    color: white;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: width 0.3s;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+}
+
+.side-menu:hover {
+    width: 230px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.side-menu a img {
+    min-width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 13px;
+}
+
+.side-menu a span {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.side-menu:hover a span {
+    opacity: 1;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: 60px;
+    background-color: #f9f9f9;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.contenedor-columnas {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: rgba(0, 112, 150, 1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(1, 79, 105);
+}
+
+.codigoAgregar {
+    margin-top: 175px;
+}
+
+.codigoFactura button:hover {
+    background-color: rgb(1, 70, 94);
+}
+
+.columna-izquierda {
+    width: 400px;
+}
+
+.total input {
+    margin-top: 10px;
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.total label {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.columna-derecha {
+    flex-grow: 1;
+}
+
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#listaProductos {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 1px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#listaProductos h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#productosVenta {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#productosVenta th,
+#productosVenta td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#productosVenta th {
+    background-color: #f2f2f2;
+}
+
+#productosVenta td:last-child {
+    text-align: center;
+}
+
+#productosVenta .eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 12px;
+    transition: background-color 0.3s;
+}
+
+#productosVenta .editar {
+    background-color: rgba(0, 112, 150, 1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 12px;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+#productosVenta .eliminar:hover,
+#productosVenta .editar:hover {
+    background-color: rgba(1, 68, 90, 1);
+}
+
+#buscarVentaForm,
+#agregarProductoForm {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#generarFacturaBtn,
+#generarVentaBtn {
+    background-color: rgb(40, 46, 48);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#generarFacturaBtn:hover,
+#generarVentaBtn:hover {
+    background-color: rgb(1, 79, 105);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
